@@ -1,0 +1,401 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --rojo:var(--rojo);
+    --blanco: white;
+    --gris:#303030;
+    --gris-f: #757575;
+    --negro: black;
+    --green: #10b756;
+    --blue: #3742ED;
+    --gris-c: #a0aec0;
+    --tipo-logo: 'Russo One';
+    --tipo-titular: 'Josefin Sans', serif;
+    --tipo-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/* Ocultando Scroll */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Propiedades de imágenes en general */
+/* .img {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+} */
+
+
+
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+video {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+}
+
+p a {
+    display: inline;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-align: center;
+}
+
+form,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+    background-color: transparent;
+    display: flex;
+    color: inherit;
+}
+
+body {
+    font-family: var(--tipo-principal);
+    font-size: 100%;
+    min-height: 100vh;
+    background-color: var(--blanco);
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    width: 100%;
+    min-height: 5em;
+    background: #16161e;
+    padding: 1em 2em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .h2-logo{
+    /* background-color: #20866e; */
+    font-family: var(--tipo-logo);
+    font-size: 1.5em;         
+    text-shadow: 0 0 30px #fff;
+    /* background: rgb(189, 189, 189); */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,143,38,1) 0%, rgba(150,126,197,1) 48%, rgba(16,186,86,1) 100%);
+    /* background: linear-gradient(to right, #10b756, #F2BA52, #BF5934 );  */
+    background-size: 300% 100%;
+    animation: gradient 5s ease infinite;    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;        
+}
+
+/* Keyframe para gradientes global */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.circles{
+    
+}
+
+.header .nav{
+    
+}
+
+.header .ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .li{
+    /* background: greenyellow;  */
+    list-style: none;
+    margin: 0 0.5em;
+}
+.header .li .a{
+    font-family: var(--tipo-titular);
+    color: lightgreen;
+    font-weight: 400;
+}
+
+@media (hover:hover){
+    .header .li .a:hover{    
+        color: #BF5934;    
+    }
+}
+
+.header .li .a:active{    
+    color: #BF5934;    
+}
+
+.main {
+    /* background: lightgreen;
+    margin: 2em 0; */
+    /* text-align: center; */
+    
+}
+
+.section {
+    background: #16161e;     
+    width: 100%;
+    min-height: 70vh;
+    /* margin: 1em 0; */
+    /* padding: 0 2em;  */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.section .img-contact-icons { 
+    width: 2em;
+
+}
+
+.section .img-contact-icons:hover { 
+        
+    /* filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(330deg) brightness(90%) contrast(86%);             */
+    filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(310deg) brightness(90%) contrast(86%) drop-shadow(1px 1px 5px #BF5934);
+}
+
+
+/* Efecto Hover BOTONES DE CONTACTO */
+@media (hover:hover) {
+    .section .img-contact-icons:hover { 
+        
+        /* filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(330deg) brightness(90%) contrast(86%);             */
+        filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(310deg) brightness(90%) contrast(86%) drop-shadow(1px 1px 5px #BF5934);
+    }
+} 
+
+/* Desactivar efecto Hover en BOTONES DE CONTACTO */
+.section .img-contact-icons:active { 
+    
+    /* filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(330deg) brightness(90%) contrast(86%);             */
+    filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(310deg) brightness(90%) contrast(86%) drop-shadow(1px 1px 5px #BF5934);
+}
+
+
+.img-perfil {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+
+    max-width: 25em;
+    padding: 2em; 
+}
+
+.section .h1 {
+    font-family: var(--tipo-titular);
+    font-size: 2.5em;
+    font-weight: 400;
+
+    color: #BF5934;
+}
+
+.section .h2 {
+    font-family: var(--tipo-titular);
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--green);
+}
+
+.section .h3 {
+    font-family: var(--tipo-titular);
+    font-size: 1.5em; 
+    text-shadow: 0 0 20px #fff;
+    background: rgb(189, 189, 189);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,143,38,1) 0%, rgba(150,126,197,1) 48%, rgba(16,186,86,1) 100%);
+    background-size: 300% 100%;
+    animation: gradient 2s ease infinite;    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;    
+}
+
+.section .contact-icons {
+    /* background: yellow; */
+    padding: 1em;
+    display: flex;    
+    gap: 1em;   
+}
+
+.section .a {}
+
+/* .section .img-contact-icons {
+    
+} */
+
+.grid-skills{     
+    width: 100%;   
+    max-width: 40em;
+    padding: 1em;     
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(4rem, 4fr));
+    gap: 1em;
+    justify-items: center; 
+}
+
+.skills {
+    /* background: rebeccapurple; */
+    /* border: 1px solid #fff;  */
+    padding: 0.1em;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 5px #000000ce;
+}
+
+.img-skills-icons{
+    width: 5em;
+    filter: grayscale(80%); 
+}
+
+.section .p {}
+
+
+.grid-projects { 
+    /* border: 1px solid #fff;  */ 
+    width: 100%;   
+    max-width: 40em;
+    margin: 1em 0;
+    padding: 1em;     
+    display: grid;  
+    grid-template-columns: repeat(auto-fit , minmax(8rem, 8fr));
+    gap: 1em;
+    justify-items: center; 
+}
+
+.projects {
+    /* background: yellow; */
+    /* width: 100%;
+    height: 100%;
+    display: flex;
+    min-height: 20vh;
+    justify-content: center;
+    align-items: center;
+     */
+    /* Overflow: No permite que el hover opacity 
+    se deslice desde afuera del grid*/
+    
+    overflow: hidden;
+    position: relative;
+    border-radius: 5%;
+    box-shadow: 0 0 10px 5px #000000ce;
+    display: grid;
+
+}
+
+.section .projects:hover {
+    opacity: 1;
+    filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(310deg) brightness(90%) contrast(86%) drop-shadow(1px 1px 10px #BF5934);
+    
+}
+
+@media (hover:hover) {
+    .section .projects:hover {
+        opacity: 1;
+        filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(310deg) brightness(90%) contrast(86%) drop-shadow(1px 1px 10px #BF5934);
+        
+    }
+}
+
+/* Desactivando el hover de los proyectos para pantallas móviles */
+.section .projects:active {
+    opacity: 1;
+    transform: translateZ(0%) scale(1);
+}
+
+.section .h4 {
+    /* color: lightgreen; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    font-size: 1.5em;
+    position: relative; 
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1rem);
+    opacity: 0;
+    transform: translateZ(1) scale(1.2);
+    transition: all .5s ease;
+}
+
+
+
+.img-projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;   
+    filter: grayscale(70%);    
+    border-radius: 3%;  
+}
+
+
+
+
+
+
+
+
