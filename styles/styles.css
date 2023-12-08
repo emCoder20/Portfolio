@@ -114,19 +114,21 @@ body {
     align-items: center;
 }
 
+/* 
 .header .h3-logo{
-    /* background-color: #20866e; */
-    font-family: var(--tipo-logo);
-    font-size: 1.5em;         
-    text-shadow: 0 0 30px #fff;
-    /* background: rgb(189, 189, 189); */
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,143,38,1) 0%, rgba(150,126,197,1) 48%, rgba(16,186,86,1) 100%);
-    /* background: linear-gradient(to right, #10b756, #F2BA52, #BF5934 );  */
+     
+} */
+
+.img-logo {
+    width: 3em;
+    filter: invert(34%) sepia(67%) saturate(621%) hue-rotate(310deg) brightness(90%) contrast(86%) drop-shadow(1px 1px 5px #BF5934); */
+    /* background: rgb(189, 189, 189);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,143,38,1) 0%, rgba(150,126,197,1) 48%, rgba(0,255,222,1) 100%);
     background-size: 300% 100%;
-    animation: gradient 5s ease infinite;    
+    animation: gradient 5s ease infinite;
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;        
+    -webkit-background-clip: content-box;
+    -webkit-text-fill-color: transparent; */
 }
 
 /* Keyframe para gradientes global */
@@ -199,8 +201,7 @@ body {
 }
 
 .section .img-contact-icons { 
-    width: 2em;
-
+    width: 2em;    
 }
 
 .section .img-contact-icons:hover {         
@@ -254,6 +255,8 @@ body {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;    
 }
+
+
 
 .section h3 {
     font-family: var(--tipo-titular);
